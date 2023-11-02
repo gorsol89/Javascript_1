@@ -1,0 +1,43 @@
+html {
+    padding-top: 8px;
+    margin: 0 auto;
+    max-width: 1360px;
+}
+ li {
+    display: inline-block;
+}
+nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav ul {
+    padding: 0px;
+}
+.active {
+    background-color: teal;
+    color: #fff
+}
+
+.logo-container {
+    padding-top: 5px;
+    max-width: 600px;
+}
+.cta {
+    background-color: teal;
+    border-radius: 18px;
+    font-size: large;
+    color: #fff;
+    text-decoration: none;
+    padding:5px 20px;
+  }
+footer {
+    background-color: lightgrey;
+    font-size: larger;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
