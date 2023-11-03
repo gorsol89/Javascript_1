@@ -1,4 +1,4 @@
-const apiUrl = ''https://api.noroff.dev/api/v1/products';
+const apiUrl = 'https://api.noroff.dev/api/v1/products';
 
 async function fetchProducts() {
     try {
