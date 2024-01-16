@@ -1,21 +1,25 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const productList = document.getElementById('productList');
+    const loadingIndicator = document.getElementById('loadingIndicator');
 
+    // Show loading indicator
+    loadingIndicator.style.display = 'block';
 
-cont url = "https://api.noroff.dev/api/v1/";
+    // API endpoint
+    const apiUrl = 'https://api.noroff.dev/api/rainy-days';
 
-const resultsContainer = document.querySelector(".results");
-
-async function make ApiCall() {
-    try {
-        const response = await fetch(url);
-
-        const results = await response.json();
-
-        console.log(results);
-
-    } catch (error) {
-        console.log(error);
-        resultsContainer.innerHTML = error
-    }
-}
-
-makeApiCall();
+    // Fetch products from the Rainy Days API
+    fetch(apiUrl + '/products')
+        .then(response => response.json())
+        .then(products => {
+            // Add products to the list
+            products.forEach(product => {
+                productList.innerHTML += `<li><a href="product-detail.html?id=${product.id}">${product.name}</a></li>`;
+            });
+        })
+        .catch(error => console.error('Error fetching products:', error))
+        .finally(() => {
+            // Hide loading indicator after API call
+            loadingIndicator.style.display = 'none';
+        });
+});
