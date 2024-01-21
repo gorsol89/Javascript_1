@@ -12,13 +12,11 @@ async function getProducts() {
 
         products.forEach(function (product) {
             resultsContainer.innerHTML += `
-                <div class="card">
+            <div class="card">
                     <img src="${product.image}" alt="${product.title}">
-                    <div class="card-content">
-                        <h3>${product.title}</h3>
+                    <h3>${product.title}</h3>
                         <p>Price: ${product.price}</p>
                         <a href="Jacket-detail.html?id=${product.id}" class="view-more">View More</a>
-                    </div>
                 </div>`;
         });
     } catch(error) {
