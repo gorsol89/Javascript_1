@@ -77,3 +77,59 @@ a {
 .card a:hover {
     background-color: darkcyan;
 }
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.card-content {
+    padding: 10px;
+}
+
+.card h3, .card p {
+    margin: 10px 0;
+}
+
+
+.view-more {
+    background-color: teal;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block; 
+    margin-bottom: 10px;
+}
+
+.view-more:hover {
+    background-color: darkcyan;
+}
+
+
+@media (max-width: 1200px) {
+   
+}
+
+@media (max-width: 768px) {
+    
+}

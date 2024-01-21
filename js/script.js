@@ -1,11 +1,13 @@
 const url = "https://api.noroff.dev/api/v1/rainy-days";
 
 async function getProducts() {
+    const resultsContainer = document.querySelector("#container");
+    resultsContainer.innerHTML = '<div class="spinner"></div>'; // Display spinner before loading products
+
     try {
         const response = await fetch(url);
         const products = await response.json();
 
-        const resultsContainer = document.querySelector("#container");
         resultsContainer.innerHTML = "";
 
         products.forEach(function (product) {
@@ -21,8 +23,7 @@ async function getProducts() {
         });
     } catch(error) {
         console.error('Error fetching products:', error);
-        const resultsContainer = document.querySelector("#container");
-        resultsContainer.innerHTML = '<div class="error">An error occurred when calling the products API.</div>';
+        resultsContainer.innerHTML = '<div class="error-message">An error occurred while fetching products.</div>';
     }
 }
 

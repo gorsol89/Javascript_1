@@ -9,24 +9,27 @@ if (!id) {
 const url = `https://api.noroff.dev/api/v1/rainy-days/${id}`;
 
 async function getProduct() {
+    const container = document.querySelector('#product-info');
+    container.innerHTML = '<div class="spinner"></div>'; // Display spinner before loading product
+
     try {
         const response = await fetch(url);
         const product = await response.json();
 
-        const container = document.querySelector('#product-info');
-        
         container.innerHTML = `
             <div class="product-card">
                 <img src="${product.image}" alt="${product.title}" />
                 <h2>${product.title}</h2>
                 <p>${product.description}</p>
+                <p>Base Color: ${product.baseColor}</p>
+                <p>Gender: ${product.gender}</p>
+                <p>Sizes: ${product.sizes}</p>
                 <p>Price: ${product.price}</p>
-                <!-- I CAN ADD MORE INFORMATION HERE! -->
+                <a href="Checkout.html" class="buy-now-button">Buy Now</a>
             </div>`;
     } catch (error) {
         console.error('Error fetching product:', error);
-        const container = document.querySelector("#product-info");
-        container.innerHTML = '<div class="error">An error occurred when calling the Product API.</div>';
+        container.innerHTML = '<div class="error-message">An error occurred while fetching product details.</div>';
     }
 }
 
