@@ -25,7 +25,7 @@ async function getProduct() {
                 <p>Gender: ${product.gender}</p>
                 <p>Sizes: ${product.sizes}</p>
                 <p>Price: ${product.price}</p>
-                <a href="Checkout.html" class="buy-now-button">Buy Now</a>
+                <a href="Checkout.html" class="cta">Buy Now</a>
             </div>`;
     } catch (error) {
         console.error('Error fetching product:', error);
