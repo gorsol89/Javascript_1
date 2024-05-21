@@ -14,7 +14,7 @@ section {
 }
 
 .product {
-    background: #d9d9d9;
+    background: #556B2F;
     border: 1px solid #ccc; 
     border-radius: 8px; 
     overflow: hidden; 
@@ -28,7 +28,7 @@ section {
 }
 
 .cta {
-    background-color: teal;
+    background-color: #FFA500;
     color: white;
     padding: 8px 15px;
     border-radius: 4px;

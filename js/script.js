@@ -26,3 +26,23 @@ async function getProducts() {
 }
 
 getProducts();
+
+//Contact form - done by CHATGTP - MÅ SJEKKES
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get form data (optional, for further processing)
+        const formData = new FormData(this);
+        const data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        // Perform any form data validation or processing here (optional)
+
+        // Redirect to the success page
+        window.location.href = 'contact-success.html';
+    });
+});
