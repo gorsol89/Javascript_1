@@ -13,36 +13,25 @@ async function getProducts() {
         products.forEach(function (product) {
             resultsContainer.innerHTML += `
             <div class="card">
-                    <img src="${product.image}" alt="${product.title}">
-                    <h3>${product.title}</h3>
-                        <p>Price: ${product.price}</p>
-                        <a href="Jacket-detail.html?id=${product.id}" class="view-more">View More</a>
-                </div>`;
+                <img src="${product.image}" alt="${product.title}">
+                <h3>${product.title}</h3>
+                <p>Price: ${product.price}</p>
+                <a href="Jacket-detail.html?id=${product.id}" class="view-more">View More</a>
+            </div>`;
         });
-    } catch(error) {
+    } catch (error) {
         console.error('Error fetching products:', error);
         resultsContainer.innerHTML = '<div class="error-message">An error occurred while fetching products.</div>';
     }
 }
 
-getProducts();
-
-//Contact form - done by CHATGTP - MÅ SJEKKES
-
 document.addEventListener('DOMContentLoaded', function() {
+    getProducts(); // Call getProducts function when the DOM is fully loaded
+
     document.getElementById('contactForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the default form submission
 
-        // Get form data (optional, for further processing)
-        const formData = new FormData(this);
-        const data = {};
-        formData.forEach((value, key) => {
-            data[key] = value;
-        });
-
         // Perform any form data validation or processing here (optional)
 
-        // Redirect to the success page
-        window.location.href = 'contact-success.html';
     });
 });

@@ -3,6 +3,7 @@ html {
     margin: 0 auto;
     max-width: 1400px;
     background-color: #C2B280;
+    height: 100%;
 }
  li {
     display: inline-block;
@@ -101,4 +102,135 @@ input {
     font-size: 100%;
 }
 
-/*
+html {
+    padding-top: 8px;
+    margin: 0 auto;
+    max-width: 1400px;
+    background-color: #C2B280;
+}
+li {
+    display: inline-block;
+}
+nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav ul {
+    padding: 0px;
+}
+.active {
+    background-color: #4682B4;
+    color: #fff
+}
+.logo-container {
+    padding-top: 5px;
+    max-width: 700px;
+    background-color: #008080;
+}
+.cta {
+    background-color: #FFA500;
+    border-radius: 18px;
+    font-size: large;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+footer {
+    background-color: #008080;
+    font-size: larger;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #C2B280;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+/* Loading Spinner */
+.spinner {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* Error Message Styling */
+.error-message {
+    color: red;
+    background-color: #ffdada; /* Light red background */
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+/* Styling for booking form */
+.booking-form {
+    background-color: #EEF1F6;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+}
+.booking-form input,
+.booking-form textarea {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.booking-form textarea {
+    height: 150px;
+}
+.booking-form input[type="submit"] {
+    width: auto;
+    background-color: #008080;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.booking-form input[type="submit"]:hover {
+    background-color: #006666;
+}
+
+/** HERO - index.html**/
+
+.hero-image {
+    
+    background-image: url(/Images/0_0\ \(2\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: left;
+    position: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
