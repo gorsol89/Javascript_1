@@ -222,9 +222,10 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding-bottom: 20%;
 }
 .hero-text {
-  text-align: center;
+  text-align: right;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -235,6 +236,8 @@ footer {
 .gallery {
     padding: 50px 0;
     text-align: center;
+    background-color: #f3f3f3;
+    padding-top: 10%;
   }
   
   .gallery h2 {
