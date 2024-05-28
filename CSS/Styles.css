@@ -1,10 +1,19 @@
 html {
-    padding-top: 8px;
-    margin: 0 auto;
-    max-width: 1400px;
-    background-color: #C2B280;
-    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
 }
+
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR*/
+
  li {
     display: inline-block;
 }
@@ -29,6 +38,17 @@ nav ul {
     max-width: 700px;
     background-color: #008080;
 }
+/*FOOTER*/
+
+footer {
+    background-color: #008080;
+    font-size: larger;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+//*BUTTONS*//
 .cta {
     background-color: #FF6600;
     border-radius: 19px;
@@ -37,13 +57,26 @@ nav ul {
     text-decoration: bold;
     padding:5px 20px;
   }
-footer {
-    background-color: #008080;
-    font-size: larger;
-    justify-content: space-evenly;
-    display: flex;
-    flex-wrap: wrap;
+  .cta {
+    background-color: #FFA500;
+    border-radius: 18px;
+    font-size: large;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
 }
+
+  button {
+    background-color: #FFA500;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-decoration: normal;
+    font-weight: bold;
+    display: block; 
+    margin-bottom: 10px;
+}
+
 .card {
     background-color: #C2B280;
     border: 1px solid black;
@@ -84,78 +117,112 @@ footer {
 
 
 
-/* Styling for bookingform */
 
-.booking_form {
-    background-color: #EEF1F6;
-    gap: top;
-    gap:bottom;
-    padding-bottom: 50px;
-    padding-left: 20%;
+/* Contact page and booking form*/
+
+.contact-info, .booking-form, .additional-info, .contact-personas {
+    margin-bottom: 40px;
 }
-input {
-    width: 80%;
-    margin: 10px;
-    padding: 22px;
+
+.contact-info h1, .contact-info h2, .contact-info p {
+    text-align: center;
+}
+
+.booking-form {
+    background-color: #EEF1F6;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h1, .booking-form h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.booking-form input,
+.booking-form textarea {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
     box-sizing: border-box;
     border: 2px solid black;
-    font-size: 100%;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-html {
-    padding-top: 8px;
-    margin: 0 auto;
-    max-width: 1400px;
-    background-color: #C2B280;
+.booking-form textarea {
+    height: 150px;
 }
-li {
-    display: inline-block;
+
+.booking-form button.cta {
+    background-color: #FF6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
 }
-nav a {
-    color: #000;
-    text-decoration: none;
-    padding: 10px;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-nav ul {
-    padding: 0px;
-}
-.active {
-    background-color: #4682B4;
-    color: #fff
-}
-.logo-container {
-    padding-top: 5px;
-    max-width: 700px;
-    background-color: #008080;
-}
-.cta {
+
+.booking-form button.cta:hover {
     background-color: #FFA500;
-    border-radius: 18px;
-    font-size: large;
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 20px;
 }
-footer {
-    background-color: #008080;
-    font-size: larger;
-    justify-content: space-evenly;
-    display: flex;
-    flex-wrap: wrap;
+
+/* Additional info styles */
+.additional-info {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.card {
-    background-color: #C2B280;
-    border: 1px solid black;
-    padding: 10px;
-    margin-bottom: 10px;
+
+.additional-info h3, .additional-info h4 {
+    text-align: center;
+    margin: 0;
 }
-.card img {
+
+.additional-info p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Contact personas styles */
+.contact-personas {
+    text-align: center;
+}
+
+.contact-personas .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 300px;
+    text-align: center;
+}
+
+.contact-personas .card h3 {
+    margin-top: 0;
+}
+
+.contact-personas .card img {
     max-width: 100%;
     height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
 }
+
+
 /* Loading Spinner */
 .spinner {
     border: 5px solid #f3f3f3; /* Light grey */
@@ -278,13 +345,4 @@ footer {
     }
   }
 
-button {
-    background-color: #FFA500;
-    color: white;
-    padding: 15px;
-    border-radius: 12px;
-    text-decoration: normal;
-    font-weight: bold;
-    display: block; 
-    margin-bottom: 10px;
-}
+

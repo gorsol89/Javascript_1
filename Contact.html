@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Contact us in Rainy Days"/>
+    <meta name="description" content="Contact us at Rainy Days"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="logo-container"><img src="/Images/RainyDays_Logo.png" height="45%" width="45%"></div>
+        <div class="logo-container"><img src="/Images/RainyDays_Logo.png" alt="Rainy Days Logo"></div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,60 +20,69 @@
                 <li><a href="Checkout.html">Cart</a></li>
             </ul>
         </nav>
-    </header> 
+    </header>
     <main>
-        <h1>Contact us</h1>
-        <h2>We want to give you the best customer service 
-            <p>and will answer you as soon as possible</p></h2>
-        <div class="booking-form">
-            <h1>Contact us in Rainy Days</h1>
-                <h2>Fill with your information about your request</h2>
-                <form id="contactForm">
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname" value="John"><br>
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-                    <label for="ordernumber">Order number:</label><br>
-                    <input type="text" id="ordernumber" name="ordernumber" value="22 33 44 55"><br>
-                    <label for="mail">Mail:</label><br>
-                    <input type="email" id="mail" name="mail" value="Hello@example.com"><br>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message">Leave your message here...</textarea><br>
-                    <div class="cta"><a href="/contact-sucess.html" class="cta">Submit</a>
-                    </div>
-                </form>
-        </div>
-        <h3>Mail: Hello@Rainydays.com
-            <p>Phone: +00 01 12 25 38 98 (08:00 - 20:00)</p>
-            <p>Adress of return:</p>
+        <section class="contact-info">
+            <h1>Contact us</h1>
+            <h2>We want to give you the best customer service</h2>
+            <p>and will answer you as soon as possible</p>
+        </section>
+        <section class="booking-form">
+            <h1>Contact us at Rainy Days</h1>
+            <h2>Fill in your information below</h2>
+            <form id="contactForm">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="John">
+                
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Doe">
+                
+                <label for="ordernumber">Order number:</label>
+                <input type="text" id="ordernumber" name="ordernumber" placeholder="22 33 44 55">
+                
+                <label for="mail">Mail:</label>
+                <input type="email" id="mail" name="mail" placeholder="Hello@example.com">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Leave your message here..."></textarea>
+                
+                <button type="submit" class="cta">Submit</button>
+            </form>
+        </section>
+        <section class="additional-info">
+            <h3>Contact Information</h3>
+            <p><strong>Mail:</strong> Hello@RainyDays.com</p>
+            <p><strong>Phone:</strong> +00 01 12 25 38 98 (08:00 - 20:00)</p>
+            <h4>Address of Return:</h4>
             <p>RainyDays AS</p>
             <p>Jacketstreet 678</p>
             <p>4561 Jacketville</p>
-        </h3>
-    </main>
-    <div class="contact-personas">
-        <h2>You can also contact one of our Superheros direct in our customer service department</h2>
-        <div class="card">
-            <h3>Theresa Day
-                <p>Head of Costumer Service</p>
+        </section>
+        <section class="contact-personas">
+            <h2>Contact Our Customer Service Superheroes</h2>
+            <div class="card">
+                <h3>Theresa Day</h3>
+                <p>Head of Customer Service</p>
                 <p>Theresa@rainydays.com</p>
-                <img src="/Images/Theresa Day.jpg" width="30%" height="70%" alt="Woman with Red hair smiling">
-            </h3>
-        </div>
-        <div class="card">
-            <h3>Theo Rain
-                <p>Head of Shipping and Logistic</p>
+                <img src="/Images/Theresa Day (2).jpg" alt="Theresa Day">
+            </div>
+            <div class="card">
+                <h3>Theo Rain</h3>
+                <p>Head of Shipping and Logistics</p>
                 <p>Theo@rainydays.com</p>
-                <img src="/Images/TheoRain.jpg" width="30%" height="70%" alt="FIX ALT TEEEEKST">
-            </h3>
-        </div>
-    </div>
-    <script src="script.js"></script>
+                <img src="/Images/TheoRain.jpg" alt="Theo Rain">
+            </div>
+        </section>
+    </main>
     <footer>
-        <h3>RainyDays AS <br>Jacketstreet 678</br>461 Jacketville</h3>
-        <p>Hello@RainyDays.com</p>
-        <p>Facebook Icon</p>
-        <p>Instagram Icon</p>
+        <h3>RainyDays AS</h3>
+        <p>Jacketstreet 678, 461 Jacketville</p>
+        <p>Email: Hello@RainyDays.com</p>
+        <div class="social-icons">
+            <a href="#"><img src="/Images/facebook_icon.png" alt="Facebook"></a>
+            <a href="#"><img src="/Images/instagram_icon.png" alt="Instagram"></a>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
