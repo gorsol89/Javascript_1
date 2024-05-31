@@ -118,7 +118,6 @@ footer {
 }
 
 
-
 /* Contact page and booking form*/
 
 .contact-info, .booking-form, .additional-info, .contact-personas {
@@ -271,33 +270,36 @@ footer {
 /*Sale on homepage*/
 
 .sale-section {
-    background-image: url('/Images/sale_section_background.png');
+    background-image: url(/Images/sale-section2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
     color: white;
-    text-align: center;
-    padding: 100px 20px;
-    height: 100vh; /* Full height */
+    text-align: left; 
+    padding: 50px 20px; 
+    margin: 80px 0; 
+    height: auto; 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; 
     align-items: center;
-    flex-direction: column;
+    flex-direction: row; 
+}
+
+.sale-content {
+    max-width: 600px; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .sale-content h1 {
-    font-size: 50px;
-    margin: 0;
-}
-
-.sale-content p {
-    font-size: 24px;
-    margin: 10px 0;
+    font-size: 36px; 
+    margin: 0 0 20px; 
 }
 
 .category-buttons {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
 }
 
 .category-buttons button {
@@ -305,7 +307,7 @@ footer {
     border: 2px solid white;
     color: white;
     font-size: 18px;
-    margin: 5px;
+    margin: 5px 0; 
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -314,7 +316,6 @@ footer {
 .category-buttons button:hover {
     background-color: rgba(255, 255, 255, 0.4);
 }
-
 /*Gallery on homepage*/
 
 .gallery {
