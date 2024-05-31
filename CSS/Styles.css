@@ -350,6 +350,40 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
+
+  /* SOME ICONS */
+  footer ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+footer ul li {
+    display: inline-block; 
+    margin: 0 10px; 
+}
+
+footer ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 18px; 
+    display: flex; 
+    align-items: center; 
+}
+
+footer ul li a i {
+    font-size: 26px; 
+    margin-right: 10px; 
+    transition: color 0.3s ease; 
+}
+
+footer ul li a:hover {
+    color: #ff6347; 
+}
+
+footer ul li a:hover i {
+    color: #ff6347; 
+}
+
   
  /* Responsive Design */
 @media (max-width: 1024px) {
