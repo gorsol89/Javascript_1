@@ -92,8 +92,8 @@ footer {
 }
 /* Loading Spinner */
 .spinner {
-    border: 5px solid #f3f3f3; /* Light grey */
-    border-top: 5px solid #3498db; /* Blue */
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #3498db; 
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -108,7 +108,7 @@ footer {
 /* Error Message Styling */
 .error-message {
     color: red;
-    background-color: #ffdada; /* Light red background */
+    background-color: #ffdada; 
     padding: 15px;
     margin: 10px 0;
     border: 1px solid red;
@@ -225,8 +225,8 @@ footer {
 
 /* Loading Spinner */
 .spinner {
-    border: 5px solid #f3f3f3; /* Light grey */
-    border-top: 5px solid #3498db; /* Blue */
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #3498db; 
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -239,7 +239,7 @@ footer {
 /* Error Message Styling */
 .error-message {
     color: red;
-    background-color: #ffdada; /* Light red background */
+    background-color: #ffdada; 
     padding: 15px;
     margin: 10px 0;
     border: 1px solid red;
@@ -303,7 +303,7 @@ footer {
 }
 
 .category-buttons button {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #E09 (255, 255, 255, 0.2);
     border: 2px solid white;
     color: white;
     font-size: 18px;
