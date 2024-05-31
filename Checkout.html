@@ -4,20 +4,9 @@
     <meta name="description" content="Checkout"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=-, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/Styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Hotjar Tracking Code for Rainy Days - IXD -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:4949599,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Checkout</title>
 </head>
 <body>
@@ -34,28 +23,40 @@
         </nav>
     </header>
     <main>
-        <section>
-            <img src="/Images/SailorJacket.png" width="50%" alt= "Red sailor jacket with grey details and high collar"/>
-        </section>
-        <section>
-            <h1>Sailor Jacket</h1>
-            <h2>Size L</h2>
-            <h3>1199,-</h3>
-        </section>
-        <section>
-            <h4>Payment</h4> 
-            <h5><form>Card number</form><form>MM/YY</form><form>CVC</form></h5>
-            <a href="/Checkout-sucess.html" class="cta">Buy now</a>
-        </section>
+        <div class="cart-container">
+            <div class="cart-item">
+                <img src="/Images/SailorJacket.png" alt="Red sailor jacket with grey details and high collar" />
+                <div class="item-details">
+                    <h1>Sailor Jacket</h1>
+                    <h2>Size: L</h2>
+                    <h3>1199,-</h3>
+                </div>
+            </div>
+            <div class="payment-section">
+                <h4>Payment</h4>
+                <form>
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Card Number">
+                    
+                    <label for="expiry-date">MM/YY</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
+                    
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" name="cvc" placeholder="CVC">
+                    
+                    <a href="/Checkout-sucess.html" class="cta">Buy now</a>
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <h3>RainyDays AS <br>Jacketstreet 678 
             461 Jacketville</h3>
-            <ul>
-              <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
-              <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
-              <li><a href="mailto:someone@yoursite.com"><i class="fa-regular fa-envelope"></i>Email Us</a></li>
-            </ul>
+        <ul>
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+            <li><a href="mailto:someone@yoursite.com"><i class="fa-regular fa-envelope"></i>Email Us</a></li>
+        </ul>
     </footer>
 </body>
 </html>

@@ -88,6 +88,9 @@ footer ul li a:hover i {
     color: #fff;
     text-decoration: bold;
     padding: 5px 20px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 button {
@@ -494,6 +497,7 @@ button {
         font-size: 16px;
     }
 }
+
 @media (max-width: 768px) {
     .about-section {
         padding: 50px 10px;
@@ -511,3 +515,5 @@ button {
         padding: 15px;
     }
 }
+
+/
