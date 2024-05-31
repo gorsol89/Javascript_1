@@ -13,7 +13,7 @@ body {
     box-sizing: border-box;
 }
 
-/* NAVBAR*/
+/* NAVBAR */
 li {
     display: inline-block;
 }
@@ -26,7 +26,7 @@ nav a:hover {
     text-decoration: underline;
 }
 nav ul {
-    padding: 0px;
+    padding: 0;
 }
 .active {
     background-color: #4682B4;
@@ -39,7 +39,7 @@ nav ul {
     background-color: #008080;
 }
 
-/*FOOTER*/
+/* FOOTER */
 footer {
     background-color: #008080;
     font-size: larger;
@@ -80,13 +80,12 @@ footer ul li a:hover i {
     color: #ff6347;
 }
 
-/*BUTTONS*/
+/* BUTTONS */
 .cta {
     background-color: #FF6600;
     border-radius: 19px;
     font-size: large;
     color: #fff;
-    text-decoration: bold;
     padding: 5px 20px;
     text-align: center;
     display: inline-block;
@@ -98,13 +97,12 @@ button {
     color: white;
     padding: 15px;
     border-radius: 12px;
-    text-decoration: normal;
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
 }
 
-/*Product images*/
+/* Product images */
 .card {
     background-color: #C2B280;
     border: 1px solid black;
@@ -144,7 +142,7 @@ button {
     font-weight: bold;
 }
 
-/* Contact page and booking form*/
+/* Contact page and booking form */
 .contact-info, .booking-form, .additional-info, .contact-personas {
     margin-bottom: 40px;
 }
@@ -208,7 +206,7 @@ button {
     background-color: #f1f1f1;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .additional-info h3, .additional-info h4 {
@@ -230,7 +228,7 @@ button {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     max-width: 300px;
     text-align: center;
@@ -245,33 +243,6 @@ button {
     height: auto;
     border-radius: 50%;
     margin-top: 10px;
-}
-
-/* Loading Spinner */
-.spinner {
-    border: 5px solid #f3f3f3;
-    border-top: 5px solid #3498db;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-/* Error Message Styling */
-.error-message {
-    color: red;
-    background-color: #ffdada;
-    padding: 15px;
-    margin: 10px 0;
-    border: 1px solid red;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
 }
 
 /* The hero section */
@@ -294,7 +265,7 @@ button {
     color: white;
 }
 
-/*Sale on homepage*/
+/* Sale on homepage */
 .sale-section {
     background-image: url(/Images/sale-section2.jpg);
     background-repeat: no-repeat;
@@ -343,7 +314,7 @@ button {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-/*Gallery on homepage*/
+/* Gallery on homepage */
 .gallery {
     padding: 50px 0;
     text-align: center;
@@ -515,5 +486,3 @@ button {
         padding: 15px;
     }
 }
-
-/
