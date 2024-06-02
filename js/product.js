@@ -10,7 +10,7 @@ const url = `https://api.noroff.dev/api/v1/rainy-days/${id}`;
 
 async function getProduct() {
     const container = document.querySelector('#product-info');
-    container.innerHTML = '<div class="spinner"></div>'; 
+    container.innerHTML = '<div class="spinner"></div>'; // Display spinner before loading product
 
     try {
         const response = await fetch(url);

@@ -2,7 +2,7 @@ const url = "https://api.noroff.dev/api/v1/rainy-days";
 
 async function getProducts() {
     const resultsContainer = document.querySelector("#container");
-    resultsContainer.innerHTML = '<div class="spinner"></div>'; 
+    resultsContainer.innerHTML = '<div class="spinner"></div>'; // Display spinner before loading products
 
     try {
         const response = await fetch(url);
@@ -26,10 +26,12 @@ async function getProducts() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    getProducts(); 
+    getProducts(); // Call getProducts function when the DOM is fully loaded
 
     document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); 
+        event.preventDefault(); // Prevent the default form submission
+
+        // Perform any form data validation or processing here (optional)
 
     });
 });
