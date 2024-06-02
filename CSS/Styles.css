@@ -15,55 +15,31 @@ body {
 }
 
 /* NAVBAR */
-header {
-    background-color: #2D3E4E;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-header .logo-container {
-    flex: 1;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex: 2;
-}
-
-nav ul li {
+li {
     display: inline-block;
-    margin-left: 20px;
+    background-color: #2D3E4E;
 }
-
 nav a {
     color: #fff;
     text-decoration: none;
     padding: 10px;
     background-color: #2D3E4E;
 }
-
 nav a:hover {
     text-decoration: underline;
 }
-
-nav .active {
+nav ul {
+    padding: 10;
+}
+.active {
     background-color: #8CBDB9;
     color: #fff;
+}
+
+.logo-container {
+    padding-top: 5px;
+    padding: 20px;
+    max-width: 2600px;
 }
 
 /* Responsive Navbar */
@@ -74,18 +50,18 @@ nav .active {
 }
 
 @media (max-width: 768px) {
-    header nav ul {
+    nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
         text-align: center;
     }
 
-    header nav ul.showing {
+    nav ul.showing {
         display: flex;
     }
 
-    header .menu-toggle {
+    .menu-toggle {
         display: block;
     }
 
@@ -111,7 +87,6 @@ footer {
 footer, h4 {
     color: #E8ECEB;
     text-decoration: none;
-
 }
 
 footer ul {
@@ -170,7 +145,6 @@ button {
     font-size: 18px; 
 }
 
-
 button a {
     color: inherit;
     text-decoration: none;
@@ -179,6 +153,7 @@ button a {
 button a:hover {
     text-decoration: none;
 }
+
 /* Product images */
 .card {
     background-color: #8CBDB9;
@@ -286,7 +261,6 @@ button a:hover {
     background-color: #E09E50;
 }
 
-
 .additional-info {
     background-color: #8CBDB9;
     padding: 20px;
@@ -340,6 +314,9 @@ button a:hover {
 }
 
 @media (max-width: 480px) {
+    .contact-personas .card {
+        flex: 1 1 100%; 
+    }
 }
 
 /* The hero section */
@@ -354,7 +331,7 @@ button a:hover {
 }
 
 .hero-text {
-    text-align: right;
+    text-align: left;
     position: absolute;
     top: 50%;
     left: 50%;
