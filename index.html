@@ -6,58 +6,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/Styles.css" rel="stylesheet">
-    <link href="css/styles-homepage.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Hotjar Tracking Code for Rainy Days - IXD -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:4949599,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
     <title>RainyDays | Pushing the comfort zone</title>
 </head>
 <body>
-    <header>
-        <div class="logo-container"><img src="/Images/RainyDays_Logo.png" alt="Rainy Days logo" height=150 px width=250px></div>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="Jackets.html">Products</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Checkout.html">Cart</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo-container">
+        <img src="Images/RainyDays_Logo.png" alt="RainyDays Logo" height="45%" width="45%">
+    </div>
+    <nav>
+        <span class="menu-toggle">&#9776;</span>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="Jackets.html">Products</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Checkout.html">Cart</a></li>
+        </ul>
+    </nav>
+</header>
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('showing');
+    });
+</script>
     <main>
-        <h1>Jackets from RainyDays</h1>
-    <section>
-    <div class="Category">
-        <div class="product">
-            <figure class="product-image">
-                <img src="/Images/Men.jpg" alt="older man with blue jacket">
-            </figure>
-            <a href="/Jackets.html" class="cta">Men</a>
-        </div>
-        <div class="product">
-            <div class="product">
-                <figure class="product-image">
-                    <img src="/Images/Woman.jpg" alt="Woman sitting on the ground in the woods">
-                </figure>
-                <a href="/Jackets.html" class="cta">Woman</a>
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1>Push your comfortzone</h1>
+              <h2>with jackets from RainyDays</h2>
+              <button><a href="/Jackets.html">Shop now</a></button>
             </div>
-        </div>
-            <div class="product">
-                <div class="product">
-                    <figure class="product-image">
-                        <img src="/Images/Winter.jpg" alt="woman in skigearn smiling in the snow">
-                    </figure>
-                    <a href="/Jackets.html" class="cta">Winter</a>
+          </div>
+          <section class="sale-section">
+            <div class="sale-content">
+                <h1>SALE UP TO 70%</h1>
+                <div class="category-buttons">
+                    <button onclick="window.location.href='Jackets.html'">Men</button>
+                    <button onclick="window.location.href='Jackets.html'">Women</button>
+                    <button onclick="window.location.href='Jackets.html'">Winter</button>
                 </div>
             </div>
-    </div>
-    </section>
+        </section>
+          <section class="gallery">
+            <h2>Snapshots from our costumers using our jackets</h2>
+            <div class="gallery-container">
+              <div class="gallery-item">
+                <img src="Images/0_0 (5).webp" alt="Image 1">
+              </div>
+              <div class="gallery-item">
+                <img src="Images/0_0 (6).webp" alt="Image 2">
+              </div>
+              <div class="gallery-item">
+                <img src="Images/0_1 (7).webp" alt="Image 3">
+              </div>
+              <div class="gallery-item">
+                <img src="Images/0_2 (8).webp" alt="Image 4">
+              </div>
+              <div class="gallery-item">
+                <img src="Images/0_2 (11).webp" alt="Image 5">
+              </div>
+              <div class="gallery-item">
+                <img src="Images/0_3 (16).webp" alt="Image 6">
+              </div>
+            </div>
+          </section>
     </main>
 <footer>
     <h3>RainyDays AS <br>Jacketstreet 678 
         461 Jacketville</h3>
-    <p>Hello@RainyDays.com</p>
-    <p>Facebook Icon</p>
-    <p>Instagram Icon</p>
-    <p>Tiktok Icon</p>
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+          <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+          <li><a href="mailto:someone@yoursite.com"><i class="fa-regular fa-envelope"></i>Email Us</a></li>
+        </ul>
 </footer>
 </body>
 </html>

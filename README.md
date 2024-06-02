@@ -1,2 +1,2 @@
-# Javascript_1
-CA for Javascript 1, deadline 21.01.24
+# Interaction Design
+CA for Interaction Design, 02.06.2024
