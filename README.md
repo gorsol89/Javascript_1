@@ -1,2 +1,3 @@
-# Interaction Design
-CA for Interaction Design, 02.06.2024
+# Cross course project
+
+- need a updated readme file
